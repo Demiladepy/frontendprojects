@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(50deg,#4169E1, #000000);
+  padding:  1px 15px; 
+}
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+.login-page text{
+  margin-bottom: 90px;
+
+}
+.login-page h1{
+  font-size: 30px;
+  color: red;
+  margin-bottom: 20px;
+}
+.login-page p{
+  font-size: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+              0 8px 16px rgba(0,0,0,0.1);
+}
+
+form input{
+  height: 55px;
+  width: auto;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+form input:focus{
+  outline: none;
+  border-color: rgb(143, 47, 47);
+}
+::placeholder{
+  color: grey;
+  font-size: 16px;
+}
+
+.login-link{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px; 
+}
+.login-link .login-btn{
+  padding: 15px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgb(117, 80, 80);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.login-link .login-btn:hover{
+  background: #444;
+
+}
+
+form a{
+  text-decoration: none;
+}
+.login-link .forget-password{
+  color: #444;
+  font-size: 16px;
+}
+.login-link .forget-password:hover{
+  text-decoration: underline;
+}
+hr{
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.create-account{
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.create-account a {
+  padding: 15px 20px;
+  background: green;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;;
+  transition: 0.5s ease-in;
+}
+.create-account a:hover{
+  background: #3ba626;
+}
+@media(max-width: 900px) {
+  .login-page{
+    flex-direction: column;
+    text-align: center;
+  }
+  .login-page text{
+    margin-bottom: 30px;
+  }
+}

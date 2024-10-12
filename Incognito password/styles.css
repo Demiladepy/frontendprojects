@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(4, 4, 87);
+}
+.input-box{
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 300px auto;
+}
+.input-box input{
+  width: 90%;
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+  color: #555;
+}
+.input-box img{
+  width: 33px;
+  cursor: pointer;
+  background-color: #fff;
+}
